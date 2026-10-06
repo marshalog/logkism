@@ -7,7 +7,7 @@ export const BLOG_REPO = 'logkism-blackbox';
 const isProd = process.argv.includes('build') || process.env.CI === 'true';
 
 export const SITE = `https://${GITHUB_USER}.github.io`;
-export const BASE = isProd ? `/${REPO}` : '/';
+export const BASE = isProd ? `/${REPO}/` : '/';
 
 // Where the sibling site lives (dev: blog dev server on :4322)
 export const BLOG_URL =
