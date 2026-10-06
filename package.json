@@ -1,0 +1,17 @@
+{
+  "name": "logkism-portfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^5.4.2",
+    "gsap": "^3.12.7",
+    "lenis": "^1.1.20"
+  }
+}
