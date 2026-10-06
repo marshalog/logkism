@@ -1,8 +1,8 @@
 // Central deploy config — shared by astro.config.mjs and the app.
 // Change GITHUB_USER once and both cross-links + GitHub Pages paths follow.
 export const GITHUB_USER = 'marshalog';
-export const REPO = 'logkism-portfolio';
-export const BLOG_REPO = 'logkism-blackbox';
+export const REPO = 'logkism';
+export const BLOG_REPO = 'soolognz-blog';
 
 const isProd = process.argv.includes('build') || process.env.CI === 'true';
 
