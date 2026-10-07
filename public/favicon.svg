@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <polygon points="15,0 100,0 100,85 85,100 0,100 0,15" fill="#0d0d11" stroke="#c1121f" stroke-width="4"/>
+  <text x="50" y="66" font-family="monospace, sans-serif" font-weight="bold" font-size="46" fill="#f0f0f5" text-anchor="middle" letter-spacing="1">LK</text>
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#2a2a35" stroke-width="2" stroke-dasharray="8 6"/>
+</svg>
