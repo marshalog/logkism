@@ -5,7 +5,7 @@ import HudFooter from '../components/HudFooter.astro';
 import { BLOG_URL, BASE } from '../../site.config.mjs';
 ---
 
-<BaseLayout title="LOGKISM" description="Portfolio cá nhân phong cách Aerospace × Cybersecurity hiện đại.">
+<BaseLayout title="LOGKISM" description="Modern Aerospace × Cybersecurity Personal Portfolio.">
   <HudNavbar current="home" />
 
   <main id="main-content">
@@ -26,21 +26,22 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           <img src="https://github.com/marshalog.png" alt="Logkism Avatar" class="hero__avatar" />
           <div class="hero__badge">
             <span class="dot"></span>
+            <span class="micro t-cyber">Le honor to be...</span>
             <span class="micro t-xian cjk">太虛神念 · 劍氣沖霄</span>
           </div>
         </div>
 
         <p class="hero__lead f-head" data-reveal="0.3">
-        Kỹ sư nghiên cứu bảo mật hệ thống hàng không vũ trụ & vi điều khiển nhúng.<br />
-        Chuyên sâu Red Teaming vệ tinh, reverse engineering firmware bay và kiến trúc phòng thủ mạng kiên cố.
-      </p>
+          Aerospace & embedded microcontroller security researcher.<br />
+          Specializing in satellite Red Teaming, avionics firmware reverse engineering, and resilient cyber defense architectures.
+        </p>
 
       <div class="hero__actions" data-reveal="0.45">
         <a href="#missions" class="btn btn--primary" data-cursor="EXPLORE">
           <span class="btn__tab"></span>
           <span class="btn__fill"></span>
-          <span class="btn__label t-cyber">INITIALIZE RADAR // DỰ ÁN</span>
-          <span class="btn__label t-xian cjk">Chiêm Ngưỡng Chiến Tích</span>
+          <span class="btn__label t-cyber">INITIALIZE RADAR // PROJECTS</span>
+          <span class="btn__label t-xian cjk">View Mission Logs</span>
           <span class="btn__icon" aria-hidden="true">
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M8 3v10M3 8l5 5 5-5"/>
@@ -55,7 +56,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           <span class="btn__tab"></span>
           <span class="btn__fill"></span>
           <span class="btn__label t-cyber">JUMP TO BLOG [BLACKBOX] ↗</span>
-          <span class="btn__label t-xian cjk">Vào Tàng Kinh Các ↗</span>
+          <span class="btn__label t-xian cjk">Enter the Vault ↗</span>
         </a>
       </div>
 
@@ -106,7 +107,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           <span class="micro accent">PERSONNEL FILE // CLASSIFIED</span>
           <h3 class="f-head dossier-name">LOGKISM</h3>
           <p class="f-mono text-muted">
-            Hoạt động tại giao điểm giữa phần cứng hàng không vũ trụ và an ninh mạng chuyên sâu. Đam mê khai thác lỗ hổng trong các giao thức truyền thông vệ tinh không gian sâu (CCSDS, DVB-S2) và bảo mật vi điều khiển bay UAV/CubeSat.
+            Operating at the intersection of aerospace hardware and deep-dive cybersecurity. Passionate about exploiting vulnerabilities in deep-space satellite communication protocols (CCSDS, DVB-S2) and securing UAV/CubeSat flight microcontrollers.
           </p>
           <div class="redacted-box">
             <span class="micro">SECRET CLEARANCE:</span>
@@ -129,7 +130,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           </div>
           <div class="intel-row">
             <span class="micro">CULTIVATION REALM (TU TIÊN)</span>
-            <span class="f-mono accent">Đại Thừa Kỳ // Chuẩn Bị Độ Kiếp Phi Thăng</span>
+            <span class="f-mono accent">Mahayana Stage // Preparing for Heavenly Tribulation</span>
           </div>
         </div>
       </div>
@@ -158,7 +159,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           </div>
           <h3 class="f-display mission-card__title">SATELLITE DOWNLINK SIMULATOR & FUZZER</h3>
           <p class="mission-card__desc f-mono">
-            Hệ thống mô phỏng truyền tải downlink vệ tinh không gian thấp (LEO), tích hợp bộ fuzzer giao thức mã hoá để phát hiện lỗi tràn bộ đệm trong phần mềm xử lý tín hiệu mặt đất.
+            Low Earth Orbit (LEO) satellite downlink simulation system, integrating a cryptographic protocol fuzzer to detect buffer overflows in ground station signal processing software.
           </p>
           <div class="mission-card__tags f-mono">
             <span>RUST</span>
@@ -173,7 +174,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
               <span class="btn__label">SOURCE REPO ↗</span>
             </a>
             <a href={BLOG_URL} class="link-slash f-mono" data-warp="BLACKBOX WRITEUP">
-              <span>ĐỌC BÀI VIẾT PHÂN TÍCH KỸ THUẬT</span>
+              <span>READ TECHNICAL WRITE-UP</span>
             </a>
           </div>
         </article>
@@ -187,7 +188,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           </div>
           <h3 class="f-display mission-card__title">DRONE AUTOPILOT FIRMWARE EMULATION RIG</h3>
           <p class="mission-card__desc f-mono">
-            Môi trường QEMU tuỳ biến để giải lập hoàn chỉnh chip vi điều khiển ARM Cortex-M7 của thiết bị bay không người lái, cho phép dump RAM và trace lệnh real-time khi xảy ra sự cố.
+            Custom QEMU environment for full emulation of UAV ARM Cortex-M7 microcontrollers, enabling RAM dumping and real-time instruction tracing during crash events.
           </p>
           <div class="mission-card__tags f-mono">
             <span>C++20</span>
@@ -202,7 +203,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
               <span class="btn__label">SOURCE REPO ↗</span>
             </a>
             <a href={BLOG_URL} class="link-slash f-mono" data-warp="BLACKBOX WRITEUP">
-              <span>ĐỌC BÀI VIẾT PHÂN TÍCH KỸ THUẬT</span>
+              <span>READ TECHNICAL WRITE-UP</span>
             </a>
           </div>
         </article>
@@ -216,7 +217,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           </div>
           <h3 class="f-display mission-card__title">RADAR TELEMETRY STREAM ENCRYPTION ENGINE</h3>
           <p class="mission-card__desc f-mono">
-            Engine mã hoá thời gian thực cho dữ liệu radar mặt đất, thông lượng >10 Gbps với thuật toán Kyber hậu lượng tử (Post-Quantum Cryptography).
+            Real-time encryption engine for ground radar data streams, achieving >10 Gbps throughput using Kyber Post-Quantum Cryptography.
           </p>
           <div class="mission-card__tags f-mono">
             <span>RUST</span>
@@ -230,7 +231,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
               <span class="btn__label">SOURCE REPO ↗</span>
             </a>
             <a href={BLOG_URL} class="link-slash f-mono" data-warp="BLACKBOX WRITEUP">
-              <span>ĐỌC BÀI VIẾT PHÂN TÍCH KỸ THUẬT</span>
+              <span>READ TECHNICAL WRITE-UP</span>
             </a>
           </div>
         </article>
@@ -308,7 +309,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           <div class="timeline-content panel">
             <h3 class="f-head">LEAD AEROSPACE SECURITY RESEARCHER</h3>
             <span class="micro text-muted">ORBITAL CYBERNETICS LAB</span>
-            <p class="f-mono text-muted">Chỉ huy các chiến dịch đánh giá an ninh giao thức vệ tinh quỹ đạo tầm trung (MEO) và xây dựng kiến trúc zero-trust cho trạm điều khiển mặt đất.</p>
+            <p class="f-mono text-muted">Commanded security assessment campaigns for Medium Earth Orbit (MEO) satellite protocols and engineered zero-trust architectures for ground control stations.</p>
           </div>
         </div>
 
@@ -317,7 +318,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           <div class="timeline-content panel">
             <h3 class="f-head">EMBEDDED FIRMWARE EXPLOIT DEV</h3>
             <span class="micro text-muted">DEFENSE AVIONICS UNIT</span>
-            <p class="f-mono text-muted">Phát hiện và báo cáo 12+ lỗ hổng bảo mật nghiêm trọng trong firmware cảm biến điều hướng máy bay không người lái.</p>
+            <p class="f-mono text-muted">Discovered and reported 12+ critical security vulnerabilities in drone navigation sensor firmware.</p>
           </div>
         </div>
 
@@ -326,7 +327,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           <div class="timeline-content panel">
             <h3 class="f-head">HARDWARE SECURITY & CTF PLAYER</h3>
             <span class="micro text-muted">GLOBAL RED TEAM COMPETITIONS</span>
-            <p class="f-mono text-muted">Vô địch nhiều giải đấu CTF chuyên đề Hardware Hacking và Radio Frequency Reverse Engineering.</p>
+            <p class="f-mono text-muted">Champion of multiple specialized CTF tournaments focusing on Hardware Hacking and Radio Frequency Reverse Engineering.</p>
           </div>
         </div>
       </div>
@@ -347,7 +348,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           CONTACT // <em>CHANNEL</em>
         </h2>
         <p class="f-mono contact-desc">
-          Kênh liên lạc được mã hoá end-to-end. Sẵn sàng cho các dự án hợp tác nghiên cứu bảo mật hàng không vũ trụ, kiểm thử xâm nhập hạ tầng vệ tinh hoặc thỉnh giáo đạo pháp tu tiên.
+          End-to-end encrypted communication channel. Open for collaborative research in aerospace security, satellite infrastructure penetration testing, or discussing cultivation methods.
         </p>
         <div class="contact-actions">
           <a href="mailto:contact@logkism.io" class="btn btn--primary" data-cursor="TRANSMIT">
@@ -357,7 +358,7 @@ import { BLOG_URL, BASE } from '../../site.config.mjs';
           </a>
           <a href={BLOG_URL} class="btn-orb" data-warp="BLACKBOX BLOG" data-cursor="WARP">
             <div class="btn-orb__label">
-              <span>GHÉ THĂM BLOG BLACKBOX</span>
+              <span>VISIT BLACKBOX BLOG</span>
             </div>
             <div class="btn-orb__ring">
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
